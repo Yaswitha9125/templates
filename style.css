@@ -1,4 +1,4 @@
-* {
+body {
     margin: 1rem 0;
     padding: 0;
     background-color: #2f2859;
@@ -24,6 +24,7 @@
     width: 15rem;
     margin: 0 auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .content .para {
