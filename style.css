@@ -39,3 +39,7 @@ li {
     margin-left: 10rem;
     text-align: left;
 }
+
+.carousel-caption {
+    color: black;
+}
