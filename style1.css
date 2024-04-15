@@ -1,114 +1,329 @@
 body {
-    margin: 1rem 0;
+    margin: 0;
     padding: 0;
     background-color: #2f2859;
     color: #fff;
+    font-family: "Chakra Petch", sans-serif;
     text-align: center;
 }
 
-.main_heading h1 {
-    font-size: 4rem;
-    padding: 1rem;
+
+.navbar {
+    background-color: #2f2859;
+    padding: 15px;
+}
+.space {
+    margin-left: 5px;
+	margin-right: 55px;
+    font-size: 1rem;
+    font-weight:200;
+}
+.space-even {
+	margin-right: 7%;
+	margin-left: 0px;
 }
 
-.content h2 {
-    background-color: #127b9e;
-    font-size: 3rem;
-    padding: 1rem;
+.sponsors {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.projectName h2 {
-    background-color: rgb(254, 78, 179);
-    font-size: 3.5rem;
-    padding: 1rem;
+.sponsors h4 {
+	padding: 20px;
 }
 
-.content h3 {
-    background-color: #4fbee3;
-    font-size: 2rem;
-    padding: 1rem;
-    margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.sponsors .sponsors-images {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 20px;
 }
 
-.content .para {
-    font-size: 1.5rem;
-    padding-right: 10rem;
-    padding-left: 10rem;
-    text-align: justify;
+.sponsors .sponsors-images img {
+	width: 50%;
 }
 
-li {
-    font-size: 1.5rem;
-    margin-right: 10rem;
-    margin-left: 15rem;
-    text-align: left;
+@media screen and (max-width: 1080px) {
+	.sponsors .sponsors-images {
+		flex-direction: column;
+	}
+
+	.sponsors .sponsors-images img {
+		width: 50%;
+	}
 }
 
-.subheading {
-    margin-right: 10rem;
-    margin-left: 10rem;
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.main1 {
+	display: flex;
+	flex-direction: row;
 }
 
-.carousel-caption {
-    color: black;
+@media screen and (max-width: 1080px) {
+	.main1 {
+		flex-direction: column;
+	}
+}
+
+.left-column,
+.right-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.middle-column {
+	text-align: left;
+}
+
+.horizontal-logos {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.horizontal-logos a {
+	color: white;
+}
+
+.horizontal-logos a:hover {
+	color: #b3b3b3;
+}
+
+.footer-logo {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+}
+
+.footer-large-logo {
+	width: 300px;
+	height: 150x;
+	margin: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 640px){
     body {font-size: 1rem;} 
-    img {
-        margin: 0 0.5rem;
-        width: 90%;
+    .sections{margin: 0 1rem;}
+    .section-4 img, .section-5 img {
+        height: 250px;
+        width: 250px;
     }
-    .content .para {
-        font-size: 1rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
+    .light img {
+        height: 200px;
+        width: 100%;
     }
-    .projectName {
-        width: 100vw;
+    .section-1 img {
+        height: 150px;
+        width: 150px;
     }
-    .projectName h2 {
-        font-size: 2.5rem;
-        padding: 0.5rem;
-    }
-    .content h2 {
+    .section-1 #overlap-name{
+        position: relative;
         font-size: 2rem;
-        padding: 0.5rem;
-    }
-    .content h3 {
-        font-size: 1.5rem;
-    }
-    li {
-        font-size: 1rem;
-        margin-right: 2rem;
-        margin-left: 3rem;
-    }
-    .subheading {
-        font-size: 1.2rem;
-        margin-right: 2rem;
-        margin-left: 2rem;
+        bottom: 100px;
     }
 }
+
 @media (min-width: 640px) and (max-width: 960px) {
     body {font-size: 1rem;} 
-    img {
-        margin: 0 1rem;
-        width: 90%;
+    .sections{margin: 0 5rem;}
+    .section-4 img, .section-5 img {
+        height: 400px;
+        width: 500px;
+    }
+    .light img {
+        height: 400px;
+        width: 100%;
+    }
+    .section-1 img {
+        height: 300px;
+        width: 300px;
+    }
+    .section-1 {
+        height: 300px;
+        overflow: hidden;
+    }
+    .section-1 #overlap-name{
+        position: relative;
+        font-size: 3rem;
+        bottom: 200px;
     }
 }
+
 @media (min-width:960px) and (max-width: 1100px) { 
     body {font-size: 1.2rem;} 
-    img {
-        margin: 0 1.5rem;
-        width: 80%;
+    .sections{margin: 0 10rem;}
+    .section-4 img, .section-5 img {
+        height: 500px;
+        width: 650px;
+    }
+    .light img {
+        height: 500px;
+        width: 100%;
+    }
+    .section-1 img {
+        height: 400px;
+        width: 400px;
+    }
+    .section-1 #overlap-name{
+        position: relative;
+        font-size: 4rem;
+        bottom: 250px;
     }
 }
+
 @media (min-width:1100px) {
     body {font-size: 1.5rem;} 
-    img {
-        margin: 0 2rem;
-        width: 70%;
+    .sections{margin: 0 15rem;}
+    .section-4 img, .section-5 img {
+        height: 500px;
+        width: 700px;
     }
+    .light img {
+        height: 600px;
+        width: 100%;
+    }
+    .section-1 img {
+        height: 400px;
+        width: 400px;
+    }
+    .section-1 #overlap-name {
+        position: relative;
+        font-size: 5rem;
+        bottom: 250px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.sections p {
+    margin-bottom: 4rem;
+}
+
+.section-1 {
+    margin-top: 7rem;
+}
+
+.section-1 #overlap-name {
+    align-items: center;
+    /* font-size: 4rem; */
+}
+
+.piechart-labels {
+    align-self: center;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+#sio2 {
+    position: relative;
+    left: 240px;
+}
+
+#fe2o3 {
+    position: relative;
+    left: 100px;
+    top: 130px;
+}
+
+#al2o3 {
+    position: relative;
+    left: -30px;
+    top: 50px;
+}
+
+#mgo {
+    position: relative;
+    left: -70px;
+    bottom: 20px;
+}
+
+#others {
+    position: relative;
+    left: -80px;
+    bottom: 90px;
+}
+
+.piechart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    right: 80px;
+    background-image: conic-gradient(
+                    rgba(254, 242, 148, 0.7) 40.9%,
+                    rgba(207, 181, 164, 0.7) 0 63.3%,
+                    rgba(254, 78, 179, 0.7) 0 73.3%,
+                    rgba(164, 45, 156, 0.7) 0 82.6%,
+                    rgba(120, 55, 139, 0.7) 0 
+                    );
+}
+
+.piechart:hover {
+    background-image: conic-gradient(
+                    rgb(254, 242, 148) 40.9%,
+                    rgb(207, 181, 164) 0 63.3%,
+                    rgb(254, 78, 179) 0 73.3%,
+                    rgb(164, 45, 156) 0 82.6%,
+                    rgb(120, 55, 139) 0 
+                    );
+}
+.theme {
+    background-color:rgb(251, 116, 19);
+    font-size: 1em;
+}
+
+
+.menu-open {
+    background-color: rgba(242, 237, 91, 0.855);
+}
+.light-mode {
+    background-color:#2f2859;
+    color: #fff;
+}
+  
+.dark-mode {
+    background-color: #080808;
+    color: #fff;
+}
+
+
+.light {
+    margin-top: 5.4rem;
+}
+
+.light #overlap-name {
+    align-items: center;
+}
+
+  
+  /* Apply the blink animation to the button */
+.blinking-button {
+    animation: blink 1s 1; /* Run the animation once */
+  }
+.theme-btn {
+    margin-right: 9%;
 }

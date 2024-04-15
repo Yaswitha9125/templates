@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="static/style.css" rel="stylesheet" />
+    <title>Project Description | IIT-Madras - iGEM</title>
+  </head>
+  <body>
+    <!-- Page Content -->
+    <div class="heading">
+      <h1>Project<br />Description</h1>
+    </div>
+    <div class="Content" style="max-height: 100%">
+      <p style="font-size: 35px">
+        <strong>What is the problem we are trying to solve?</strong>
+      </p>
+      <p style="font-size: 23px">
+        The fundamental thought process behind this project is exploration
+        beyond conventionally-used methods and how these can be made accessible
+        to the everyday researcher. <i>E. coli</i> emerged as a feasible chassis
+        organism in the early days of synthetic biology, but this led to a
+        sunken cost feedback loop in which research investigating
+        <i>E. coli</i> was favored disproportionately over looking for new and
+        better chassis. Over time, simply because the body of information on
+        <i>E. coli</i> aggregated to be too large for any investigative effort
+        outside it to be practically unfavorable, synthetic biology fell into a
+        rut of having a singular chassis for the overwhelming majority of its
+        workflow.
+      </p>
+      <p style="font-size: 35px"><strong>How are we solving it?</strong></p>
+      <p style="font-size: 23px">
+        As students, driven by an interest in synthetic biology, we have
+        relatively more freedom to question the fundamentals of the nature of
+        our work, explore novel chassis and develop better genetic engineering
+        techniques. Our laboratory efforts have been driven towards
+        characterizing Lactococcus lactis better, which requires significantly
+        less effort with regards to downstream processing as there is no
+        additional purification required to remove an endotoxin layer. The most
+        significant hurdles encountered when working with a new organism is an
+        absence of genetic and regulatory information, making circuit design and
+        fine-tuning gene expression challenging and extremely labor intensive.
+        Our wet lab team constructed a library of randomized RBS sequences
+        characterized by their expression levels, providing a solid base of
+        initial information for anyone using this chassis.
+      </p>
+      <p style="font-size: 35px">
+        <strong>Our RBS Predictor-Optimizer: Synthopedia!</strong>
+      </p>
+      <p style="font-size: 23px">
+        Our predictor-optimizer addresses the issue of fine tuning protein
+        expression on a broader level, and contributes to the groundwork to an
+        in <i>silico</i> solution to better control over expression dynamics.
+        Harnessing machine learning principles over a wider set of parameters,
+        including both thermodynamic and biophysical data points, our team has
+        designed a machine learning model for protein expression prediction and
+        optimization, leveraging which, we are able to predict expression levels
+        for RBS sequences as well as optimize them for a particular expression
+        level. The results of this model have been cross-tested against state of
+        the art models.
+      </p>
+    </div>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        word-spacing: 5px;
+        line-height: 1.5;
+      }
+      .heading h1 {
+        padding: 0;
+        margin-top: 20px;
+      }
+      .heading {
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        background-color: rgb(74, 9, 74);
+      }
+
+      .Content {
+        margin-top: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 3%;
+      }
+
+      .Content p {
+        margin-bottom: 20px;
+      }
+    </style>
+  </body>
+</html>

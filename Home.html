@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGem</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+
+  <section>
+    <nav class="navbar fixed-top" aria-label="Ninth navbar example">
+        <div class="container-fluid">
+            <div class="space-even">
+            <a class="" href="..."><svg class="space-even"
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.795 22.313v146.882c55.798 46.488 119.15 83.37 184.63 117.045-68.898-9.21-127.42-27.277-176.08-56.648 25.434 36.314 76.9 75.687 123.05 93.105 5.342-.26 10.686-.385 16.035-.36 59.215.29 118.975 18.028 182.593 51.007-73.04-10.31-146.083-16.405-219.125-9.024l-31.84 8.106c137.858 15.975 273.397 44.77 399.2 127.383L330.693 117.4c4.486 88.07 27.066 170.91 59.79 252.354C310.604 277.09 276.607 167.96 273.126 63.37c-9.615 54.178-6.77 117.06 5.514 180.732-42.698-79.1-60.54-156.684-54.908-221.79H118.29c20.587 101.514 94.966 212.595 191.64 303.282C177.518 247.214 109.7 132.916 64.518 22.313H20.795z"
+                ></path>
+              </svg></a></div>
+          
+              
+          
+           <div class='theme-btn'><button onclick="callBothFunctions()"  id="dark-mode-toggler" class="btn theme" type="button">Dark Mode</button></div>
+            <div><button class="navbar-toggler btn theme" onclick='startBlink(this)' type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button></div>
+        
+          
+            
+    
+          <div class="collapse navbar-collapse" id="navbarsExample07XL">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"><span class="nav__icon" style="opacity: 1; transform: none"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      height="28"
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title></title>
+                      <path
+                        d="M23.235 6.825v11.997a.924.924 0 0 1-.419.725l-.393.235c-1.961 1.135-3.687 2.134-5.431 3.14V9.948L5.759 3.454C7.703 2.338 9.64 1.211 11.586.1a.927.927 0 0 1 .837 0l10.81 6.243v.482zm-8.741 4.562A9631.706 9631.706 0 0 0 6.8 6.943a.94.94 0 0 0-.837 0c-1.733 1.001-3.467 2-5.199 3.004l8.113 4.684V24c1.732-.999 3.46-2.006 5.197-2.995a.927.927 0 0 0 .419-.724zM.765 19.317l5.613 3.241V16.07Z"
+                      ></path></svg></span
+                  ><span class="nav__text space" style="opacity: 1; transform: none"
+                    >Team</span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Team</a></li>
+                    <li><a class="dropdown-item" href="#">Attributions</a></li>
+                    <li><a class="dropdown-item" href="#">Collaborations</a></li>
+                  </ul>
+                </div>
+                <div class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"><span class="nav__icon" style="opacity: 1; transform: none"
+                    ><svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    height="28"
+                    width="28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.35.37h-1.86a4.628 4.628 0 0 0-4.652 4.624v5.609H4.652A4.628 4.628 0 0 0 0 15.23v3.721c0 2.569 2.083 4.679 4.652 4.679h1.86c2.57 0 4.652-2.11 4.652-4.679v-3.72c0-.063 0-.158-.005-.158H8.373v3.88c0 1.026-.835 1.886-1.861 1.886h-1.86c-1.027 0-1.861-.864-1.861-1.886V15.23a1.839 1.839 0 0 1 1.86-1.833h14.697c2.57 0 4.652-2.11 4.652-4.679V4.997A4.628 4.628 0 0 0 19.35.37Zm1.861 8.345c0 1.026-.835 1.886-1.861 1.886h-3.721V4.997a1.839 1.839 0 0 1 1.86-1.833h1.86a1.839 1.839 0 0 1 1.862 1.833zm-8.373 9.706a.236.236 0 0 0 0 .03c0 .746.629 1.344 1.396 1.344.767 0 1.395-.594 1.395-1.34a.188.188 0 0 0 0-.034v-3.35h-2.791z"
+                    ></path></svg></span><span class="nav__text space" style="opacity: 1; transform: none"
+                    >Project</span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Description.html">Distribution</a></li>
+                    <li><a class="dropdown-item" href="contributions.html">Contribution</a></li>
+                    <li><a class="dropdown-item" href="safety.html">Safety</a></li>
+                  </ul>
+                </div>
+                <div class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"><span class="nav__icon" style="opacity: 1; transform: none"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      height="28"
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title></title>
+                      <path
+                        d="M12.0059 1.7635a.4383.4383 0 0 0-.2149.0547.4214.4214 0 0 0-.1562.1523L9.3613 5.834a.8191.8191 0 0 0-.1133.416c0 .146.0388.2896.1133.416l4.9512 8.4123a.8444.8444 0 0 0 .3125.3047.8584.8584 0 0 0 .4239.1113h4.5489a.4358.4358 0 0 0 .2129-.0566.4185.4185 0 0 0 .1543-.1524.4106.4106 0 0 0 .0586-.207.416.416 0 0 0-.0567-.209L12.3711 1.9745a.416.416 0 0 0-.1543-.1524.4276.4276 0 0 0-.211-.0586zM8.0195 8.5058a.4277.4277 0 0 0-.211.0566.4235.4235 0 0 0-.1562.1524L.0584 21.6095a.4083.4083 0 0 0-.002.418.4188.4188 0 0 0 .1563.1524c.065.0365.138.057.2129.0566h4.5509a.8586.8586 0 0 0 .4238-.1113.8389.8389 0 0 0 .3105-.3047l4.9532-8.4123a.8194.8194 0 0 0 .1133-.416.8264.8264 0 0 0-.1133-.418L8.3886 8.7148a.4235.4235 0 0 0-.1562-.1524.435.435 0 0 0-.213-.0566Zm3.0117 8.8244a.8645.8645 0 0 0-.4258.1113.8385.8385 0 0 0-.3105.3047l-2.2754 3.8614a.4123.4123 0 0 0-.0567.209.4059.4059 0 0 0 .0567.207.4228.4228 0 0 0 .1543.1543.432.432 0 0 0 .2129.0547h15.1897a.4319.4319 0 0 0 .2129-.0547.4222.4222 0 0 0 .1543-.1543.4059.4059 0 0 0 .0566-.207.4122.4122 0 0 0-.0566-.209L21.67 17.7462a.8384.8384 0 0 0-.3106-.3047.8573.8573 0 0 0-.4238-.1113z"
+                      ></path></svg></span
+                  ><span class="nav__text space" style="opacity: 1; transform: none"
+                    >Wet&nbsp;Lab</span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Notebook</a></li>
+                    <li><a class="dropdown-item" href="Experiments.html">Experiments</a></li>
+                    <li><a class="dropdown-item" href="#">Measurements</a></li>
+                  </ul>
+                </div>
+                
+              <div class="navbar-nav">
+                  <a class="nav-link" href="#"><span class="nav__icon" style="opacity: 1; transform: none"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      height="28"
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title></title>
+                      <path
+                        d="M23.778 14.482l-2.287-9.959c-.13-.545-.624-1.09-1.169-1.248L9.87.051C9.74 0 9.584 0 9.426 0c-.443 0-.909.18-1.222.443L.716 7.412C.3 7.776.092 8.504.222 9.024l2.445 10.662c.13.545.624 1.092 1.169 1.248l9.775 3.015c.13.051.285.051.443.051.443 0 .91-.18 1.223-.443l8.007-7.435c.418-.39.624-1.092.494-1.64zM10.962 2.417l7.175 2.21c.285.08.285.21 0 .286l-3.77.858c-.285.08-.674-.05-.883-.26l-2.626-2.834c-.235-.232-.184-.336.104-.26zm4.47 12.872c.079.286-.105.444-.39.365l-7.748-2.392c-.285-.079-.338-.313-.13-.52l5.93-5.514c.209-.209.443-.13.52.156zM2.667 8.267l6.293-5.85c.21-.209.545-.18.754.025L12.86 5.85c.209.21.18.545-.026.754l-6.293 5.85c-.21.21-.545.181-.754-.025L2.64 9.024a.536.536 0 01.026-.757zm1.536 9.284L2.54 10.244c-.08-.285.05-.34.234-.13L5.4 12.949c.209.209.285.624.209.909L4.462 17.55c-.079.285-.208.285-.26 0zm9.202 4.264l-8.217-2.522a.547.547 0 01-.364-.675l1.378-4.421a.547.547 0 01.675-.365l8.216 2.522c.285.079.443.39.364.675L14.08 21.45a.553.553 0 01-.674.365zm7.279-5.98L15.2 20.93c-.209.209-.31.13-.234-.155l1.144-3.694c.079-.285.39-.573.674-.624l3.77-.858c.288-.076.339.054.13.234zm.598-1.09l-4.523 1.039a.534.534 0 01-.65-.39l-1.922-8.372a.534.534 0 01.39-.65L19.1 5.335a.534.534 0 01.649.39l1.923 8.371c.079.31-.102.596-.39.65Z"
+                      ></path></svg></span
+                  ><span class="nav__text space" style="opacity: 1; transform: none"
+                    >Model</span
+                  ></a>
+              </div>
+              <div class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"><span class="nav__icon" style="opacity: 1; transform: none"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 1024 1024"
+                      height="28"
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M955.7 856l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-790.4-23.9L512 231.9 858.7 832H165.3zm319-474.1l-228 394c-12.3 21.3 3.1 48 27.7 48h455.8c24.7 0 40.1-26.7 27.7-48L539.7 358c-6.2-10.7-17-16-27.7-16-10.8 0-21.6 5.3-27.7 16zm214 386H325.7L512 422l186.3 322zm-214-194.1l-57 98.4C415 669.5 430.4 696 455 696h114c24.6 0 39.9-26.5 27.7-47.7l-57-98.4c-6.1-10.6-16.9-15.9-27.7-15.9s-21.5 5.3-27.7 15.9zm57.1 98.4h-58.7l29.4-50.7 29.3 50.7z"
+                      ></path></svg></span
+                  ><span class="nav__text space" style="opacity: 1; transform: none"
+                    >Human&nbsp;Practices</span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Integrated Human Practices</a></li>
+                    <li><a class="dropdown-item" href="#">Communication &amp; Education</a></li>
+                    <li><a class="dropdown-item" href="#">Outreach</a></li>
+                    <li><a class="dropdown-item" href="#">Sustainable development</a></li>
+                    <li><a class="dropdown-item" href="#">Inclusivity and Diversity</a></li>
+                  </ul>
+              </div>
+              <div class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"><span class="nav__icon" style="opacity: 1; transform: none"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      height="28"
+                      width="28"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title></title>
+                      <path
+                        d="M12 0l3.547 10.788-4.5-1.255-.25 4.43 7.121 4.035V18h.001l5.919-6zm-.64.65L.162 12l6.32 6.407L12 24l5.184-5.255-9.736-3.856z"
+                      ></path></svg></span
+                  ><span class="nav__text space" style="opacity: 1; transform: none"
+                    >Dry&nbsp;Lab</span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Model.html">Model</a></li>
+                    <li><a class="dropdown-item" href="Software.html">Software</a></li>
+                    
+                  </ul>
+                </div>
+          </div>
+          </div>
+            
+        </div>
+      </nav>
+</section>
+
+
+
+    <div class="main">
+        <div class="light">
+            <img src="lightmode-bg.png" alt="mars-space-exploration">
+            <div id="overlap-name"></div>
+        </div>
+        <div class="sections section-2">
+            <p>*something about grand challenges in space sxsfsxtfvuw hgfytvkk g hksjhjghf sfghjlm*</p>
+
+            <h2><span style="color:#fef294">IN-SITU</span> <span style="color:#fe4eb3">RESOURCE UTILISATION</span></h2>
+
+            <p>random text content description hjasdhb hgg fru szaka fsgh haljhAchb hhxjx gsjhbshb hfbsjhbkas <span style="color:#fe4eb3">hjasdhb</span>  gcj hnfchazv vbx nc  cbcbvn cbjx cd mkv k,azcx mkvl ll;zl,mb vxxzz  zaz hs mksz,  hh dsxfv jhk xztdgfxhfg mnh Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi <span style="color:#fe4eb3">hjasdhb</span> obcaecati deserunt corporis delectus debitis qui, assumenda vero quia dolor inventore harum, vel, eum aspernatur sit aliquid in illo incidunt. </p>
+        </div>
+
+        <div class="sections section-3">
+            <p>random text content description <span style="color:#fe4eb3">hjasdhb</span> hgg fru szaka fsgh haljhAchb hhxjx gsjhbshb hfbs jhbkas Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut obcaecati earum non? Quis architecto facilis dicta recusandae, rerum, omnis repudiandae magni quae fugit consequuntur facere nesciunt provident numquam quo.
+            Fugiat culpa, dolore tempore est ab facilis perferendis nihil, necessitatibus <span style="color:#fe4eb3">hjasdhb</span> ratione quia sapiente consequuntur, fugit voluptatum neque eum doloribus aperiam nemo amet commodi quisquam? Expedita commodi corrupti culpa perspiciatis blanditiis.</p>
+
+            <div class="piechart-labels">
+                <span id="sio2">SiO2<br>45.9%</span>
+                <span id="fe2o3">Fe2O3<br>17.7%</span>
+                <span id="al2o3">Al2O3<br>10%</span>
+                <span id="mgo">MgO<br>9.3%</span>
+                <span id="others">Others<br>17.1%</span> 
+                <div class="piechart"></div>
+            </div>
+            
+            <p>random text content description hjasdhb hgg fru <span style="color:#fe4eb3">hjasdhb</span> szaka fsgh haljhAchb hhxjx gsjhbshb hfbsjhbkas  gcj hnfchazv vbx nc  cbcbvn cbjx cd mkv k,azcx mkvl ll;zl,mb vxxzz  zaz hs mksz,  hh dsxfv jhk xztdgfxhfg mnh Lorem ipsum dolor sit <span style="color:#fe4eb3">hjasdhb</span>, amet consectetur adipisicing elit. Aspernatur incidunt eligendi id odit eaque velit, laboriosam aperiam ipsa veniam mollitia iusto consequatur. Fuga ipsum, officia quam odio optio aliquam maxime?</p>
+        </div>
+
+        <div class="sections section-4">
+            <img src="silicon(L).png">
+
+            <p>random text content description <span style="color:#fe4eb3">hjasdhb</span> hjasdhb hgg fru szaka fsgh haljhAchb hhxjx gsjhbshb hfbsjhbkas  gcj hnfchazv vbx nc  cbcbvn cbjx cd mkv k,azcx mkvl ll;zl,mb vxxzz  zaz hs mksz,  hh dsxfv jhk xztdgfxhfg mnh Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda natus repellat non doloribus quae! Provident, qui nisi? Similique reiciendis  <span style="color:#fe4eb3">hjasdhb</span>fugiat at itaque odio molestias dolorum provident quasi, totam, et soluta.
+            Provident suscipit debitis assumenda harum, nulla molestiae optio minus excepturi quo tempore aperiam delectus fuga quidem, nemo veniam voluptate! Totam nisi mollitia vel, officiis quis ullam voluptatibus <span style="color:#fe4eb3">hjasdhb</span> fuga? Sunt, incidunt?</p>
+        </div>
+
+        <div class="sections section-5">
+            <img src="reaction(L).png">
+
+            <p>random text content description hjasdhb hgg fru szaka fsgh haljhAchb hhxjx <span style="color:#fe4eb3">hjasdhb</span> gsjhbshb hfbsjhbkas  gcj hnfchazv vbx nc  cbcbvn cbjx cd mkv k,azcx mkvl ll;zl,mb vxxzz  zaz hs mksz,  hh dsxfv jhk xztdgfxhfg mnh Lorem ipsum dolor <span style="color:#fe4eb3">hjasdhb</span> sit amet, consectetur adipisicing elit. Praesentium ipsum, delectus itaque quae voluptatem ad neque atque laudantium non provident dolore sit, aspernatur numquam veritatis voluptatibus similique reiciendis esse odit.
+            Quia unde doloremque, animi dolores a vitae ratione rem labore aliquid dolorem? Harum quo veritatis iure cum enim, corporis aperiam quam nihil possimus impedit quas. Deleniti alias <span style="color:#fe4eb3">hjasdhb</span> nesciunt repudiandae corrupti!
+            Porro, ullam! Laudantium ipsam voluptatibus <span style="color:#fe4eb3">hjasdhb</span> culpa ullam aperiam molestiae cumque perspiciatis nihil at omnis numquam sunt ducimus provident aspernatur iste, eveniet earum dicta molestias veniam non nobis voluptatum pariatur optio.</p>
+        </div>
+    </div>
+
+
+    <section>
+      <footer>
+        <div class="sponsors p-5">
+            <h4 class="text-center">A heartful thanks to our title sponsor:</h4>
+            <div class="sponsors-images">
+                <a href="#">
+                    <img src="..." alt="Spons1" style="width: 100%;">
+                </a>
+            </div>
+            <h4 class="text-center">And our other sponsors:</h4>
+            <div class="sponsors-images">
+                <a href="#">
+                    <img src="..." alt="Spons2" style="width: 80%;">
+                </a>
+                <a href="#">
+                    <img src="..." alt="Spons3" style="width: 80%;">
+                </a>
+            </div>
+            <div class="sponsors-images">
+                <a href="#">
+                    <img src="..." alt="Spons4" style="width: 80%">
+                </a>
+                <a href="#" style="width: 30%">
+                    <img src="..." alt="Spons5" style="width: 80%">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="main1">
+            <div class="left-column p-5">
+                <div class="horizontal-logos">
+                    <img src="https://static.igem.wiki/teams/4931/wiki/igem-logo.png" alt="Logo 1" class="footer-logo bg-dark">
+                    <img src="https://static.igem.wiki/teams/4931/wiki/iitm-logo.png" alt="Logo 2" class="footer-logo">
+                </div>
+                <div class="horizontal-logos">
+                    <img src="https://static.igem.wiki/teams/4931/wiki/cfi.jpeg" alt="Logo 3" class="footer-logo">
+                </div>
+            </div>
+    
+            <div class="middle-column p-5" style="position: relative;">
+                <div class="p-3">
+                    <h1 style=" margin-top: 0px; text-align: center;"><b>Address</b></h1>
+                    <h3 style=" margin-top: 20px; text-align: center;" class="tab">Indian Institute of Technology Madras, Chennai, 600036</h3>
+                </div>
+                <p class="d-flex justify-content-center">
+                  <img src="./images/fa-email.jpg" alt="Instagram Logo" style="width: 2.25em; height:1.5em;"> &nbsp;
+                    igem@smail.iitm.ac.in
+                </p>
+            </div>
+    
+            <div class="right-column p-5">
+                <div class="horizontal-logos">
+                    <a style="padding: 25px;" href="https://www.instagram.com/igemiitm/?hl=en" target="_blank"><img src="./images/fa-instagram.jpg" alt="Instagram Logo" style="width: 4em; height: 4em;"></a>
+                    <a style="padding: 25px;" href="https://twitter.com/iGEM_IITM" target="_blank"><img src="./images/fa-twitter.png" alt="Twitter Logo" style="width: 2.6em; height: 2.6em;"></a>
+                    <a style="padding: 25px;" href="https://www.youtube.com/channel/UCSYv2GGrFXr4G4x6coUGKlg" target="_blank"><img src="./images/fa-youtube.jpeg" alt="youtube Logo" style="width: 4em; height: 4em;"></a>
+                </div>
+                <div class="horizontal-logos">
+                    <a style="padding: 25px;" href="https://www.facebook.com/igem.iitm/" target="_blank"><img src="./images/fa-facebook.jpg" alt="Facebook Logo" style="width: 3em; height: 3em;"></a>
+                    <a style="padding: 25px;" href="https://www.linkedin.com/company/iit-madras-igem/?originalSubdomain=in"
+                        target="_blank"><img src="./images/fa-linkedin.jpg" alt="linkedin" style="width: 3em; height: 3em;"></a>
+                </div>
+                <div class="horizontal-logos">
+                </div>
+            </div>
+        </div>
+        <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+        <div style="text-align: center;">
+        </div>
+        <div class="mt-4">
+            <div class="col">
+                <hr>
+                <p class="mb-0"><small>© 2024 - Content on this site is licensed under a <a class="subfoot"
+                            href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">Creative
+                            Commons Attribution 4.0 International license</a>.</small></p>
+    
+                <p><small>The repository used to create this website is available at <a
+                            href="https://gitlab.igem.org/2024/iit-madras"
+                            target="_blank">gitlab.igem.org/2024/iit-madras</a>.</small></p>
+            </div>
+        </div>
+    </footer>
+  </section>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
